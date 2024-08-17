@@ -20,6 +20,7 @@ main {
     width: 100%;
     /* height: 100%; */
     background-color: #f8f8f8;
+    /* background-color: lightcoral; */
     padding-top: 0.1px;
     position: relative;
 }
@@ -313,31 +314,34 @@ nav h2:nth-last-child(1) a {
 
 /* Alphabet Navigation Ends */
 
-/* Page 2 */
+/* Page 2 Starts*/
 
 #page2{
     width: 100%;
-    height: 100vh;
+    height: 300vh;
     /* background-color: salmon; */
     padding: 4vw 5vw;
-    display: grid;
-    grid-template-rows: 100% 100% 100%;
+
 }
+
+/* Page 2 TOP*/
 
 #page2-top{
-    display: grid;
-    grid-template-columns: 55% 35%;
-    grid-template-rows: 100%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
     justify-content: space-between;
+    /* border: 2px solid red; */
 }
 
-/* #page2-top-left{
-    background-color: red;
-} */
+#page2-top-left{
+    width: 50%;
+    height: 100%;
+}
 
 #page2-top-left img{
     width: 100%;
-    height: 95%;
+    height: 92%;
     object-fit: cover;
     object-position: center;
 }
@@ -350,25 +354,34 @@ nav h2:nth-last-child(1) a {
     font-size: 2vw;
     text-transform: uppercase;
     align-content: center;
-    margin-top: 2vh;
-    /* background-color: rgb(60, 0, 255); */
+    margin-top: 1.8vh;
+}
+
+#page2-top-right{
+    width: 35%;
+    height: 92%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: .8vmax;
+    /* background-color: red; */
 }
 
 #page2-top-right img{
     width: 100%;
-    height: 72%;
+    height: 80vmax;
     object-fit: cover;
     object-position: top;
 }
 
 #page2-top-right #top-text-block{
     width: 100%;
-    height: 20%;
+    height: fit-content;
     display: flex;
     align-items: start;
     justify-content: space-between;
-    margin-top: 3%;
-
+    /* background-color: yellow; */
 }
 
 #top-text-block h3{
@@ -386,12 +399,116 @@ nav h2:nth-last-child(1) a {
 
 }
 
-/* #page2-center{
-    border: 2px solid #000;
-    background-color: lightgreen;
-} */
+/* Page 2 CENTER*/
+#page2-center{
+    /* border: 2px solid #000; */
+    /* background-color: rgb(144, 238, 236); */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
 
-/* #page2-bottom{
-    border: 2px solid #000;
-    background-color: lightgoldenrodyellow;
-} */
+#page2-center-left{
+    width: 40%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: rgb(88, 199, 37); */
+}
+
+#page2-center-left #circ-container{
+    width: 80%;
+    height: 85%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#circ-container #circ-text{
+    position: relative;
+    width: 40%;
+    aspect-ratio: 1;
+    /* background-color: rgb(24, 97, 28); */
+    transform: scaleX(-1);
+    animation: rotateText 10s infinite linear;
+}
+
+@keyframes rotateText {
+    from{
+        transform: rotate(0);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#circ-text span{
+    position: absolute;
+}
+
+#circ-container img{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+
+#page2-center-left h3{
+    width: 80%;
+    height: 15%;
+    font-weight: 600;
+    font-size: 1.5vw;
+    align-content: end;
+    /* background-color: red; */
+}
+
+#page2-center-right{
+    width: 60%;
+    height: 95%;
+}
+
+#page2-center-right img{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(92, 225, 65); */
+    object-fit: cover;
+    object-position: 0 40%;
+}
+
+
+/* Page 2 BOTTOM*/
+#page2-bottom{
+    /* background-color: lightgoldenrodyellow; */
+    width: 100%;
+    height: 100vh;
+    padding: 2vw 0;
+    position: relative;
+}
+
+#page2-bottom img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    object-position: 25% center;
+}
+
+#page2-bottom h1{
+    position: absolute;
+    top: 3vw;
+    right: 2vw;
+    width: 2.2vmax;
+    height: 2.2vmax;
+    text-align: center;
+    align-content: center;
+    font-weight: 400;
+    font-size: 1.5vmax;
+    border: 3px solid #000;
+    border-radius: 50%;
+}
+
+/* Page2 Ends */
+
