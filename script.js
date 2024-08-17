@@ -16,5 +16,14 @@ function createCircularText() {
 
     console.log(para);
 }
+createCircularText();
 
-createCircularText()
+function disableRtCl() {
+    const images = document.querySelectorAll("img");
+    images.forEach((image) => {
+        image.addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+        });
+    });
+}
+disableRtCl()
