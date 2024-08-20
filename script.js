@@ -18,12 +18,11 @@ function createCircularText() {
 }
 createCircularText();
 
-function disableRtCl() {
+(function disableRtCl() {
     const images = document.querySelectorAll("img");
     images.forEach((image) => {
         image.addEventListener("contextmenu", function (e) {
             e.preventDefault();
         });
     });
-}
-disableRtCl()
+})();
