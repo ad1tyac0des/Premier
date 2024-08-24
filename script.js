@@ -9,12 +9,10 @@ function createCircularText() {
             span.innerText = paraContent[i];
             para.appendChild(span);
             span.style.transformOrigin = `0 ${para.offsetWidth / 2}px`;
-            console.log(para.offsetWidth / 2);
+            // console.log(para.offsetWidth / 2);
             span.style.rotate = `${(360 / paraContent.length) * i}deg`;
         }
     };
-
-    console.log(para);
 }
 createCircularText();
 
