@@ -177,8 +177,7 @@ nav h3 {
 }
 
 #over1 #circle:hover {
-    border-color: #000;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.461);
 }
 
 /* #circle::before{
