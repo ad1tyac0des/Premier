@@ -139,14 +139,14 @@
 }
 
 @font-face {
-    font-family: 'Monument';
+    font-family: 'Monument Extended';
     src: url('Assets/Fonts/MonumentExtended-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Monument';
+    font-family: 'Monument Extended';
     src: url('Assets/Fonts/MonumentExtended-Ultrabold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
