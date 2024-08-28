@@ -16,6 +16,81 @@ body {
     color: #fff;
 }
 
+/* Preloader */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: flex-end;
+    z-index: 100;
+}
+
+.loader-content {
+    width: 100%;
+    padding: 2vw;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: 1vw;
+}
+
+.progress-text {
+    width: 26vw;
+    font-family: Monument Extended;
+    color: #000;
+    font-size: clamp(25px, 3vw, 60px);
+    white-space: nowrap;
+}
+
+.progress-text span {
+    font-family: gilroy;
+    font-weight: 900;
+    font-size: clamp(20px, 2vw, 40px);
+}
+
+
+.progress-bar {
+    width: clamp(200px, 72vw, 1400px);
+    height: .4vw;
+    background-color: transparent;
+    margin-bottom: .8vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.progress {
+    width: 0%;
+    height: 100%;
+    background-color: #000;
+    border-radius: 2px;
+    transition: width 0.3s ease-out;
+}
+
+@media (max-width: 768px) {
+    .loader-content {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .progress-text {
+        font-size: clamp(12px, 3vw, 60px);
+    }
+
+    .progress-text span {
+        font-size: 5vw;
+    }
+
+    .progress-bar {
+        width: 60vw;
+        height: 1.5vw;
+    }
+}
+
 main {
     width: 100%;
     background-color: #f8f8f8;
@@ -157,7 +232,7 @@ nav h3 {
 }
 
 #over1 h1 {
-    font-family: Monument;
+    font-family: Monument Extended;
     font-weight: 600;
     font-size: 4vw;
 }
@@ -359,7 +434,7 @@ nav h3 {
 #page2-top-left h1 {
     width: 100%;
     height: 5%;
-    font-family: Monument;
+    font-family: Monument Extended;
     font-weight: 600;
     font-size: clamp(25px, 3.2vw, 42px);
     text-transform: uppercase;
@@ -526,7 +601,7 @@ nav h3 {
 }
 
 #page3>h1 {
-    font-family: Monument;
+    font-family: Monument Extended;
     font-weight: 700;
     font-size: clamp(30px, 2vw, 40px);
     text-transform: uppercase;
@@ -685,7 +760,7 @@ nav h3 {
 }
 
 #marquee-text h1 {
-    font-family: monument;
+    font-family: Monument Extended;
     font-weight: 500;
     font-size: clamp(45px, 3.5vw, 70px);
     text-transform: uppercase;
@@ -725,7 +800,7 @@ nav h3 {
 }
 
 #page5-left h1 {
-    font-family: monument;
+    font-family: Monument Extended;
     font-weight: 600;
     font-size: clamp(29px, 2.2vw, 45px);
     text-transform: uppercase;
