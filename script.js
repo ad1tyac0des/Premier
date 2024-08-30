@@ -89,6 +89,8 @@ gsap.from("#page3>h1 span", {
     scrollTrigger: {
         trigger: "#page2-bottom",
         start: "center+=100px center",
+        end: "bottom-=120px center",
+        scrub: 1.3,
         // markers: true,
     },
 })
