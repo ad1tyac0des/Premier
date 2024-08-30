@@ -1037,6 +1037,11 @@ footer .nav-item {
         font-size: 5.2vw;
     }
 
+    nav h3{
+        font-weight: 100;
+        font-size: 5.5vw;
+    }
+
     /* Navbar Ends here */
 
     /* Center Section Start */
