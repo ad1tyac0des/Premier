@@ -92,6 +92,7 @@ body {
     }
 }
 
+/* Main Section Starts */
 main {
     width: 100%;
     background-color: #f8f8f8;
@@ -211,6 +212,7 @@ nav h3 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 3px;
 }
 
 #overlay {
@@ -442,6 +444,7 @@ nav h3 {
     height: 92%;
     object-fit: cover;
     object-position: center;
+    border-radius: 3px;
 }
 
 #page2-top-left h1 {
@@ -471,6 +474,7 @@ nav h3 {
     height: 80vmax;
     object-fit: cover;
     object-position: top;
+    border-radius: 3px;
 }
 
 #page2-top-right #top-text-block {
@@ -572,6 +576,7 @@ nav h3 {
     height: 100%;
     object-fit: cover;
     object-position: 0 40%;
+    border-radius: 3px;
 }
 
 /* Page 2 BOTTOM*/
@@ -588,6 +593,7 @@ nav h3 {
     height: 90%;
     object-fit: cover;
     object-position: 25% center;
+    border-radius: 3px;
 }
 
 #page2-bottom h1 {
@@ -732,6 +738,7 @@ nav h3 {
     height: 100%;
     object-fit: cover;
     object-position: top;
+    border-radius: 3px;
 }
 
 #page4-right {
@@ -744,6 +751,7 @@ nav h3 {
     height: 60%;
     object-fit: cover;
     object-position: top;
+    border-radius: 3px;
 }
 
 #page4-right #text-box {
@@ -864,6 +872,7 @@ p .circular-b {
     margin-top: 10%;
     object-fit: cover;
     object-position: top;
+    border-radius: 3px;
 }
 
 /* Page5 Ends */
