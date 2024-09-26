@@ -2,6 +2,8 @@
 
 A modern, responsive website project for Premier Models, showcasing fashion photography and model portfolios with interactive elements and animations.
 
+![HomeSS](Assets/Images/premierSS.jpg)
+
 ## Features
 
 - Responsive design for various screen sizes
